@@ -1,3 +1,77 @@
-
+@charset "UTF-8";
+/* Blog Page1920 */
+.blog {
+  position: relative;
+  width: 1920px;
+  height: 2549px;
+  /* Видосы */
+}
+.blog__blog-page {
+  position: absolute;
+  display: flex;
+  width: 1217px;
+  height: 1666px;
+  left: 351px;
+  top: 41px;
+  background: #FFFFFF;
+  /* Лого */
+  /* Group 79 */
+  /* +99890 999 9797 */
+}
+.blog__blog-page__logo {
+  position: absolute;
+}
+.blog__blog-page__menu {
+  justify-content: space-between;
+  position: absolute;
+  width: 564px;
+  height: 19px;
+  left: 678px;
+  top: 55px;
+  /* Блог */
+  /* Все статьи */
+  /* Программирование */
+  /* Маркетинг */
+  /* Дизайн */
+}
+.blog__blog-page__menu_blog {
+  color: #F65C2C;
+  position: absolute;
+  height: 18px;
+  left: 35.31%;
+  right: 62.97%;
+  bottom: 2476px;
+}
+.blog__blog-page__menu_all-articles {
+  position: absolute;
+  height: 18px;
+  left: 39.17%;
+  right: 56.41%;
+  bottom: 2476px;
+  color: #444444;
+}
+.blog__blog-page__menu_programming {
+  position: absolute;
+  height: 18px;
+  left: 45.73%;
+  right: 46.88%;
+  bottom: 2476px;
+  color: #444444;
+}
+.blog__blog-page__menu_marketing {
+  position: absolute;
+  height: 18px;
+  left: 55.26%;
+  right: 40.36%;
+  bottom: 2476px;
+  color: #444444;
+}
+.blog__blog-page__menu_design {
+  position: absolute;
+  height: 18px;
+  left: 61.77%;
+  right: 35.31%;
+  bottom: 2475px;
+}
 
 /*# sourceMappingURL=style.css.map */
