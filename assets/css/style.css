@@ -83,22 +83,22 @@ body {
   padding: 0 10px 0 0;
 }
 
-.main_left {
+.main-left {
   display: flex;
   justify-items: center;
   align-items: center;
   width: 400px;
   height: 150px;
 }
-.main_left__block {
+.main-left__block {
   display: flex;
   justify-content: space-between;
   margin-left: 300px;
 }
-.main_left h1 {
+.main-left h1 {
   margin-top: -10px;
 }
-.main_left__btn {
+.main-left__btn {
   font-family: Century Gothic Bold;
   font-size: 17px;
   text-decoration: none;
@@ -108,7 +108,7 @@ body {
   border: 3px solid #ffffff;
   border-radius: 50px;
 }
-.main_left .academic-cap {
+.main-left .academic-cap {
   transform: rotate(-1deg);
   margin-right: 100px;
 }
