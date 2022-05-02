@@ -347,7 +347,7 @@ body {
 
 /*                                Футер */
 .footer {
-  background-image: url(/assets/images/footer.svg);
+  background-image: url(/images/footer.svg);
   width: 1920px;
   height: 742px;
   align-items: center;
