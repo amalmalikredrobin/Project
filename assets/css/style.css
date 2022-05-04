@@ -7,7 +7,7 @@
   src: url("/assets/fonts/Century Gothic/centurygothic.ttf");
 }
 html {
-  width: 1920px;
+  overflow-x: hidden;
 }
 
 body {
@@ -16,106 +16,126 @@ body {
 }
 
 .header {
-  width: 1920px;
-  height: 872px;
+  width: 100%;
+  height: 54.5em;
   margin-right: 0 auto;
-  background-image: url("../images/wavy-background-up.svg");
-  background-size: 100%;
+  background-image: url("../images/wavy-background-up.png");
+  background-size: 120em;
   background-repeat: no-repeat;
-  padding-top: 100px;
+  padding-top: 6.25em;
 }
 .header__inner {
-  width: 1216px;
-  height: 872px;
+  width: 75.9em;
+  height: 54.5em;
   margin: auto;
   align-items: center;
 }
 .header__nav {
   align-items: center;
-  width: 1216px;
-  height: 59px;
+  width: 76em;
+  height: 3.7em;
   display: flex;
-  font-size: 20px;
+  font-size: 1.25em;
 }
-.header__main {
-  margin-top: 130px;
-  width: 1299px;
-  height: 564px;
-}
-.header__main h1 {
-  margin-top: -10px;
-}
-.header__main h1 {
-  font-size: 90px;
-  color: white;
-  font-family: Century Gothic Bold;
+.header__nav-logo {
+  width: 13.5em;
+  height: 3.6875em;
 }
 
 .menu {
   display: flex;
-  width: 680px;
+  width: 42.5em;
   display: flex;
 }
 .menu__item {
-  padding-left: 50px;
+  padding-left: 3.125em;
   color: white;
-  margin: 0 20px;
+  margin: 0 1.25em;
   font-family: Century Gothic Bold;
   text-decoration: none;
 }
+.menu li {
+  list-style: none;
+}
+.menu__burger {
+  display: none;
+  cursor: pointer;
+}
+.menu__burger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
 
 .language {
-  width: 86px;
+  width: 5.375em;
   color: white;
   justify-content: center;
-  margin: 0 20px;
+  margin: 0 1.25em;
   font-family: Century Gothic Bold;
 }
 
 .contact {
   justify-content: center;
-  width: 223px;
+  width: 13.9375em;
   color: white;
   font-family: Century Gothic Bold;
 }
 .contact img {
-  height: 20px;
-  padding: 0 10px 0 0;
+  height: 1.25em;
+  padding: 0 0.625em 0 0;
 }
 
-.main-left {
-  display: flex;
+.header__main {
   justify-items: center;
   align-items: center;
-  width: 400px;
-  height: 150px;
+  width: 25em;
+  height: 9.375em;
 }
-.main-left__block {
+.header__main h1 {
+  width: 56.875em;
+  font-family: "Century Gothic Bold";
+  font-size: 5.625em;
+  color: #fff;
+  margin-top: 1.1em;
+}
+.header__main .main {
   display: flex;
-  justify-content: space-between;
-  margin-left: 300px;
 }
-.main-left h1 {
-  margin-top: -10px;
+.header__main .main__block {
+  display: flex;
+  align-items: center;
+  margin-top: -2em;
+  margin-right: 12.5em;
 }
-.main-left__btn {
+.header__main .main__btn {
   font-family: Century Gothic Bold;
-  font-size: 17px;
+  font-size: 1.0625em;
   text-decoration: none;
   color: #ffffff;
-  padding: 24px 60px;
-  position: relative;
-  border: 3px solid #ffffff;
-  border-radius: 50px;
+  background: none;
+  border: 0.1875em solid #ffffff;
+  border-radius: 3.125em;
+  width: 15.3125em;
+  height: 3.75em;
+  margin-right: 1.25em;
+  cursor: pointer;
 }
-.main-left .academic-cap {
+.header__main .main .academic-cap {
+  width: 37.24em;
+  height: 22.8725em;
   transform: rotate(-1deg);
-  margin-right: 100px;
+  margin-top: -13.8125em;
+  margin-left: 6.25em;
 }
 
 .first-section {
   text-align: center;
-  width: 1216px;
+  width: 76em;
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -125,48 +145,40 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 50px;
+  font-size: 3.125em;
 }
 .first-section__btn {
-  padding: 10px 25px;
+  padding: 0.625em 1.5625em;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   background: transparent;
   outline: none !important;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
   position: relative;
   display: inline-block;
   text-decoration: none;
-  font-size: 25px;
-  margin-bottom: 60px;
-  padding: 10px;
+  font-size: 1.5625em;
+  margin-bottom: 3.75em;
+  padding: 0.625em;
 }
 .first-section__bttn {
   font-family: Century Gothic Bold;
-  border: 2px solid rgb(246, 92, 44);
-  height: 60px;
+  border: 0.125em solid #f65c2c;
+  height: 3.75em;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1;
   color: red;
-  border-radius: 50px;
-}
-.first-section__bttn:after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 0;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  background: rgb(255, 92, 44);
-  border-radius: 50px;
-  transition: all 0.3s ease;
+  border-radius: 3.125em;
 }
 .first-section__bttn:hover {
-  color: rgb(255, 255, 255);
+  background-color: #FF6B00;
+  color: #ffffff;
+}
+.first-section__bttn:hover {
+  color: white;
 }
 .first-section__bttn:hover:after {
   top: auto;
@@ -175,8 +187,8 @@ body {
 }
 
 .second-section {
-  width: 1216px;
-  height: 314px;
+  width: 76em;
+  height: 19.625em;
   left: 354px;
   top: 1143px;
   background: #FFFFFF;
@@ -185,6 +197,9 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+}
+.second-section__block-first {
+  width: 22.4375em;
 }
 .second-section__block-first .tittle {
   margin-top: 35px;
@@ -202,15 +217,15 @@ body {
   width: 19px;
   height: 19px;
   border-radius: 50%;
-  border: 2px solid rgb(246, 92, 44);
+  border: 2px solid #f65c2c;
   cursor: pointer;
   transition: 0.5s;
 }
 .second-section__block-first .tittle .radio:hover {
-  border: 6px solid rgb(246, 92, 44);
+  border: 6px solid #f65c2c;
 }
 .second-section__block-first h2 {
-  width: 305px;
+  width: 22.4375em;
   height: 36px;
   font-family: "Century Gothic Bold";
   font-style: normal;
@@ -219,6 +234,9 @@ body {
   line-height: 37px;
   margin-top: 44px;
   margin-left: 55px;
+}
+.second-section__block-second {
+  width: 22.4375em;
 }
 .second-section__block-second .tittle {
   margin-top: 35px;
@@ -236,15 +254,15 @@ body {
   width: 19px;
   height: 19px;
   border-radius: 50%;
-  border: 2px solid rgb(246, 92, 44);
+  border: 2px solid #f65c2c;
   cursor: pointer;
   transition: 0.5s;
 }
 .second-section__block-second .tittle .radio:hover {
-  border: 6px solid rgb(246, 92, 44);
+  border: 6px solid #f65c2c;
 }
 .second-section__block-second h2 {
-  width: 150px;
+  width: 9.375em;
   height: 37px;
   font-family: "Century Gothic Bold";
   font-style: normal;
@@ -255,6 +273,7 @@ body {
   margin-left: 55px;
 }
 .second-section__block-third {
+  width: 22.4375em;
   margin-right: 60px;
 }
 .second-section__block-third button {
@@ -262,9 +281,17 @@ body {
   margin-left: 100px;
   width: 144px;
   height: 35px;
-  border: 2px solid rgb(246, 92, 44);
-  background-color: #ffffff;
+  border: 2px solid #f65c2c;
   border-radius: 50px;
+  background-color: #fff;
+  text-decoration: none;
+  color: #ff6b00;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.second-section__block-third button:hover {
+  background-color: #FF6B00;
+  color: #fff;
 }
 .second-section__block-third button p {
   width: 98px;
@@ -277,7 +304,7 @@ body {
   text-align: center;
 }
 .second-section__block-third h2 {
-  width: 219px;
+  width: 13.6875em;
   height: 37px;
   font-family: "Century Gothic Bold";
   font-style: normal;
@@ -376,8 +403,8 @@ body {
 }
 
 .third-section {
-  width: 1216px !important;
-  margin-top: 35px;
+  width: 76em !important;
+  margin-top: 2.1875em;
   margin-top: 35px;
 }
 .third-section h3 {
@@ -442,9 +469,11 @@ body {
 .third-section__elem-first .elem-c button {
   width: 144px;
   height: 35px;
-  border: 2px solid rgb(246, 92, 44);
+  border: 2px solid #f65c2c;
   background-color: #ffffff;
   border-radius: 50px;
+  font-family: "Century Gothic";
+  font-size: 10px;
 }
 .third-section__elem-first .elem-c button p {
   width: 128px;
@@ -465,9 +494,9 @@ body {
 }
 
 .fourth-section {
-  width: 1216px !important;
-  margin-left: 42px;
-  margin-top: 130px;
+  width: 76em !important;
+  margin-left: 2.625em;
+  margin-top: 8.125em;
   display: flex;
 }
 .fourth-section__tittle p {
@@ -502,7 +531,7 @@ body {
   margin-left: 42px;
 }
 .fifth-section p {
-  width: 729px;
+  width: 45.5625em;
   height: 172px;
   font-style: normal;
   font-weight: 700;
@@ -513,22 +542,22 @@ body {
   margin-top: -150px;
 }
 .fifth-section__system-aproach {
-  width: 1197px;
-  height: 284px;
-  margin-top: -88px;
+  width: 74.813em;
+  height: 17.75em;
+  margin-top: -5.5em;
   display: flex;
   justify-content: center;
-  margin-left: -12px;
+  margin-left: -0.75em;
 }
 .fifth-section__system-aproach .elements {
-  width: 219px;
-  height: 284px;
-  margin-left: 20px;
+  width: 13.688em;
+  height: 17.75em;
+  margin-left: 1.25em;
 }
 .fifth-section__system-aproach .round {
   width: 219px;
   height: 219px;
-  border: 1px solid rgb(246, 92, 44);
+  border: 1px solid #f65c2c;
   border-radius: 50%;
 }
 .fifth-section__system-aproach .round .practice {
@@ -618,16 +647,18 @@ body {
   font-family: "Century Gothic";
   font-style: normal;
   font-weight: 700;
-  font-size: 100px;
+  font-size: 6.25em;
   line-height: 123px;
 }
 .eighth-section__block {
-  height: 521px;
-  left: 352px;
-  top: 7458px;
+  margin: 0 auto;
+  width: 76em;
+  height: 32.563em;
+  left: 22em;
+  top: 466.125em;
   background: #FFFFFF;
-  box-shadow: 0px 20px 50px rgba(38, 38, 38, 0.1);
-  border-radius: 50px;
+  box-shadow: 0px 1.25em 3.125em rgba(38, 38, 38, 0.1);
+  border-radius: 3.125em;
 }
 .eighth-section__block .f-name {
   width: 392px;
@@ -635,7 +666,7 @@ body {
   margin-left: 103px;
 }
 .eighth-section__block .s-name {
-  width: 650px;
+  width: 578px;
   margin-left: 40px;
 }
 .eighth-section__block .email {
@@ -659,6 +690,7 @@ body {
   border: none;
   margin-left: 103px;
   margin-top: -22px;
+  cursor: pointer;
 }
 .eighth-section .frame {
   border-radius: 50px;
@@ -678,15 +710,15 @@ body {
 .eighth-section img {
   width: 300px;
   height: 300px;
-  margin-left: 932px;
+  margin-left: 857px;
   margin-top: -233px;
 }
 
 .footer {
-  width: 1920px;
-  height: 872px;
-  margin-top: 130px;
-  background-image: url("../images/wavy-background-down.svg");
+  width: 120em;
+  height: 54.5em;
+  margin-top: 8.125em;
+  background-image: url("../images/wavy-background-down.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -694,6 +726,9 @@ body {
 .footer__block-first {
   display: flex;
   justify-content: center;
+}
+.footer__block-first a {
+  text-decoration: none;
 }
 .footer__block-first h6 {
   margin-left: 100px;

@@ -8,59 +8,86 @@
     <title>Document</title>
     <link rel="stylesheet" href="/assets/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
 </head>
 
 <body>
+
+
+
+
     <!-- шапка -->
+
     <div class="header">
         <div class="header__inner">
             <div class="header__nav">
-                <div class="header-nav-logo"><img src="/assets/images/logo.png" alt=""></div>
-                <div class="logo__menu">
-                    <a href="/pages/blog.html" class="menu__item"> Блог</a>
-                    <a href="#" class="menu__item">Курсы</a>
-                    <a href="#" class="menu__item">Контакты</a>
-                    <a href="#" class="menu__item">О нас</a>
+                <div class="header__nav-logo"><a href="/pages/index.html"><img src="/assets/images/logo.png" alt=""></a></div>
+                <ul class="menu">
+                    <li>
+                        <a href="" class="menu__item"> Блог</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__item">Курсы</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__item">Контакты</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__item">О нас</a>
+                    </li>
+                </ul>
+                <div class="menu__burger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </div>
-                <div class="language">Ру <img src="/assets/images/option.svg" alt=""></div>
-                <div class="contact"><img src="/assets/images/phone-icon" alt=""> +99890 999 9797</div>
+                <div class="language">Ру <img src="/assets/images/option.png" alt=""></div>
+                <div class="contact"><img src="/assets/images/phone-icon.png" alt=""> +99890 999 9797</div>
             </div>
             <div class="header__main">
-                <h1>Школа-профессий будущего</h1>
-                <div class="main-left">
-                    <a href="/" class="main-left__btn">Записаться на курс</a>
-                    <img class="main-left__img" src="/assets/images/play-icon.png" alt="">
-                    <div class="main-left__block">
-                        <img class="academic-cap" src="/assets/images/academic-cap.png" alt="">
-                    </div>
+                <h1>Школа-профессий</br> будущего</h1>
+                <div class="main">
+                    <div class="main__block">
+                    <button class="main__btn">Записаться на курс</button>
+                    <a href=""><img class="main__img" src="/assets/images/play-icon-s.png" alt=""></a>
                 </div>
+                        <img class="academic-cap" src="/assets/images/academic-cap.png" alt="">
             </div>
         </div>
     </div>
+
+
+
+
 
     <!-- первый раздел -->
-    <div class="first-section">
-        <div class="container">
+
+    <div class="container first-section">
             <div class="row gy-4 justify-content-md-center">
                 <h2>Наши направления</h2>
-                <div class="col-xxl-2 col-xl-2 col-md-2 col-sm col-xs-6">
+                <div class="col-xxl-2 col-sm-6">
                     <div><a href="/" class="first-section__btn first-section__bttn">Все</a></div>
                 </div>
-                <div class="col-xxl-3 col-xl-3 col-md-4 col-sm col-xs-6">
+                <div class="col-xxl-3 col-md-4 col-sm-6">
                     <div><a href="/" class="first-section__btn first-section__bttn">Дизайн</a></div>
                 </div>
-                <div class="col-xxl-4 col-xl-4 col-md-6 col-sm colxs-10">
+                <div class="col-xxl-4 col-md-6 col-sm-10">
                     <div><a href="/" class="first-section__btn first-section__bttn">Программирование</a></div>
                 </div>
-                <div class="col-xxl-3 col-xl-3 col-md-4 col-sm col-xs-6"><a href="/"
+                <div class="col-xxl-3 col-md-4 col-sm-6"><a href="/"
                         class="first-section__btn first-section__bttn">Маркетинг</a></div>
             </div>
-        </div>
     </div>
 
+
+
+
+
     <!-- второй раздел -->
-    <div class="second-section">
-        <div class="second-section__block-first">
+
+    <div class="container second-section">
+        <div class="row second-section__block-first">
             <h2>Уровень сложности</h2>
             <div class="tittle">
                 <div class="radio"></div>Любой
@@ -72,7 +99,7 @@
                 <div class="radio"></div>Для специалистов
             </div>
         </div>
-        <div class="second-section__block-second">
+        <div class="row second-section__block-second">
             <h2>Тип курса</h2>
             <div class="tittle">
                 <div class="radio"></div>Любой
@@ -84,22 +111,27 @@
                 <div class="radio"></div>Курс
             </div>
         </div>
-        <div class="second-section__block-third">
+        <div class="row second-section__block-third">
             <h2>Длительность</h2>
             <div class="tittle"><input type="range" min="1" max="12">
                 <p>от 1 до 12 месяцев</p>
             </div>
-            <button class="second-section__btn second-section__bttn">
+            <button href="#" class="second-section__btn">
                 <p>Применить фильтр</p>
             </button>
         </div>
     </div>
 
+
+
+
+
 <!-- третий раздел -->
+
     <div class="container third-section">
         <h3>Результаты поиска</h3>
         <div class="row gy-4 justify-content-md-center third-section__container-row">
-            <div class="col-xl-6 third-section__card">
+            <div class="col-xl-6 col-sm-12 third-section__card">
                 <div class="third-section__elem-first">
                     <p>Професии</p>
                 </div>
@@ -107,7 +139,7 @@
                     <div class="elem-a">
                         <h4>Графический дизайнер</h4>
                     </div>
-                    <div class="elem-b"><img src="/assets/images/a-i-icon.svg" alt=""></div>
+                    <div class="elem-b"><img src="/assets/images/a-i-icon.png" alt=""></div>
                     <div class="elem-c"><button>Отправить заявку</button></div>
                 </div>
                 <div class="third-section__elem-second">
@@ -120,7 +152,7 @@
                     <p>1 раз в неделю по з часа</p>
                 </div>
             </div>
-            <div class="col-xl-6 third-section__card">
+            <div class="col-xl-6 col-sm-12 third-section__card">
                 <div class="third-section__elem-first">
                     <p>Професии</p>
                 </div>
@@ -129,14 +161,14 @@
                         <h4>UX/UI</br>
                             дизайнер</h4>
                     </div>
-                    <div class="elem-b"><img src="/assets/images/feather-icon.svg" alt=""></div>
+                    <div class="elem-b"><img src="/assets/images/feather-icon.png" alt=""></div>
                     <div class="elem-c"><button>Отправить заявку</button></div>
                 </div>
                 <div class="third-section__elem-second">
                     <p>русский</p>
                 </div>
             </div>
-            <div class="col-xl-6 third-section__card">
+            <div class="col-xl-6 col-sm-12 third-section__card">
                 <div class="third-section__elem-first">
                     <p>Професии</p>
                 </div>
@@ -145,14 +177,14 @@
                         <h4>Веб-</br>
                             дизайнер</h4>
                     </div>
-                    <div class="elem-b"><img src="/assets/images/share-icon.svg" alt=""></div>
+                    <div class="elem-b"><img src="/assets/images/share-icon.png" alt=""></div>
                     <div class="elem-c"><button>Отправить заявку</button></div>
                 </div>
                 <div class="third-section__elem-second">
                     <p>русский</p>
                 </div>
             </div>
-            <div class="col-xl-6 third-section__card">
+            <div class="col-xl-6 col-sm-12 third-section__card">
                 <div class="third-section__elem-first">
                     <p>Професии</p>
                 </div>
@@ -161,7 +193,7 @@
                         <h4>Motion-</br>
                             дизайнер</h4>
                     </div>
-                    <div class="elem-b"><img src="/assets/images/clapperboard-icon.svg" alt=""></div>
+                    <div class="elem-b"><img src="/assets/images/clapperboard-icon.png" alt=""></div>
                     <div class="elem-c"><button>Отправить заявку</button></div>
                 </div>
                 <div class="third-section__elem-second">
@@ -172,7 +204,11 @@
     </div>
 
 
+
+
+
         <!-- четвертый раздел -->
+
     <div class="container">
         <div class="fourth-section">
             <div class="fourth-section__tittle">
@@ -186,34 +222,39 @@
     </div>
 
 
+
+
+
+
     <!-- пятый раздел -->
+
     <div class="container">
         <div class="fifth-section">
             <p style="font-family: Century Gothic Bold">Системный подход</p>
             <p style="font-family: Century Gothic" class="p-first">к образованию</p>
             <div class="fifth-section__system-aproach">
                 <div class="elements">
-                    <div class="round"><img src="/assets/images/play-icon.svg" alt="">
+                    <a href="#"><div class="round"><img src="/assets/images/play-icon-b.png" alt=""></a>
                         <p>Видеолекции</p>
                     </div>
                 </div>
                 <div class="elements">
-                    <div class="round"><img src="/assets/images/buildingpeople-icon.svg" alt="">
+                    <a href="#"><div class="round"><img src="/assets/images/buildingpeople-icon.png" alt=""></a>
                         <p class="practice">Практика</p>
                     </div>
                 </div>
                 <div class="elements">
-                    <div class="round"><img src="/assets/images/dialog-icon.svg" alt="">
+                    <a href="#"><div class="round"><img src="/assets/images/dialog-icon.png" alt=""></a>
                         <p>Консультации</p>
                     </div>
                 </div>
                 <div class="elements">
-                    <div class="round"><img src="/assets/images/certification-icon.svg" alt="">
+                    <a href="#"><div class="round"><img src="/assets/images/certification-icon.png" alt=""></a>
                         <p>Сертификат</p>
                     </div>
                 </div>
                 <div class="elements">
-                    <div class="round"><img src="/assets/images/job-icon.svg" alt="">
+                    <a href="#"><div class="round"><img src="/assets/images/job-icon.png" alt=""></a>
                         <p class="job">Трудоустройство</p>
                     </div>
                 </div>
@@ -222,7 +263,14 @@
     </div>
 
 
+
+
+
+
+
+
     <!-- шестой раздел -->
+
     <div class="container">
         <div class="row gy-4 sixth-section">
             <h5>Мы на YouTube</h5>
@@ -234,7 +282,14 @@
         </div>
     </div>
 
+
+
+
+
+
+
     <!-- седьмой раздел -->
+
     <div class="container" style="width: 1232px; margin: 0 auto; margin-top: 20px;">
         <div class="row seventh-section">
 
@@ -278,8 +333,14 @@
     </div>
 
 
+
+
+
+
+
+
     <!-- восьмой раздел -->
-    <div class="container">
+
         <div class="eighth-section">
             <h5>Подать заявку</h5>
             <div class="eighth-section__block">
@@ -293,18 +354,26 @@
                 </form>
             </div>
         </div>
-    </div>
+
+
+
+
+
+
+
+
 
     <!-- футер -->
+
     <div class="footer">
             <div class="footer__block-first">
-                <div class="element"><h6>КУРСЫ</h6><p>Дизайн</p><p>Програмирование</p><p>Маркетинг</p></div>
-                <div class="element"><h6>ДИЗАЙН</h6><p>Графический Дизайн</p><p>UX/UI Дизайн</p><p>Моушен дизайн</p></div>
-                <div class="element"><h6>МАРКЕТИНГ</h6><p>Цифровой Маркетинг</p><p>SMM Pro</p><p>Youtube</p><p>Targeting</p></div>
+                <div class="element"><h6>КУРСЫ</h6><a href="#"><p>Дизайн</p></a><a href="#"><p>Програмирование</p></a><a href="#"><p>Маркетинг</p></a></div>
+                <div class="element"><h6>ДИЗАЙН</h6><a href="#"><p>Графический Дизайн</p></a><a href="#"><p>UX/UI Дизайн</p></a><a href="#"><p>Моушен дизайн</p></a></div>
+                <div class="element"><h6>МАРКЕТИНГ</h6><a href="#"><p>Цифровой Маркетинг</p></a><a href="#"><p>SMM Pro</p></a><a href="#"><p>Youtube</p></a><a href="#"><p>Targeting</p></a></div>
             </div>
             <div class="footer__block-second">
-                <div class="logo"><img src="/assets/images/logo.png" alt=""></div>
-                <div class="social"><img src="/assets/images/social-media.png" alt=""></div>
+                <div class="logo"><a href="#"><img src="/assets/images/logo.png" alt=""></a></div>
+                <div class="social"><a href="#"><img src="/assets/images/social-media.png" alt=""></a></div>
             </div>
         </div>
 
