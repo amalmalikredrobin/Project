@@ -8,11 +8,11 @@
   font-family: century-gothic
   src: url("/assets/fonts/Century Gothic/centurygothic.ttf")
 
-$orange:#FF6B00
-$black:#444444
-$light-orange:#FF8730
-$grey:#868686
-$white:#FFFFFF
+$orange: #FF6B00
+$black: #444444
+$light-orange: #FF8730
+$grey: #868686
+$white: #FFFFFF
 
 body
   height: 100%
@@ -25,11 +25,40 @@ body
 /*                     Шапка
 
 .header
+  position: fixed
+  width: 100%
+  top: 0
+  left: 0
+  z-index: 1000
   display: flex
   min-height: 129px
   align-items: center
-  max-width: 1216px
   margin: 0px auto
+
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: $white
+    z-index: 8px
+
+.header__body
+  z-index: 3
+  display: flex
+  justify-content: space-between
+  height: 100px
+  width: 100%
+  margin: 0px auto
+  max-width: 1216px
+  align-items: center
+
+.header__nav
+  height: 100%
+  align-items: center
+  display: flex
 
 .logo__image
   height: 45.31585693359375px
@@ -39,12 +68,12 @@ body
   width: 572px
   height: 19px
   display: flex
-  margin: 0px 0px 0px 152px
+  margin: 0px 0px 0px 149px
   justify-content: space-between
 
   /* Все статьи
 
-.menu__link-active
+.menu__link_active
   font-weight: 700
   color: $orange
   line-height: 18px
@@ -54,6 +83,11 @@ body
   font-size: 15px
 
   &:hover
+    color: $orange
+    text-decoration: underline
+    transition: 0.1s
+
+  &:active
     color: $light-orange
     text-decoration: underline
     transition: 0.1s
@@ -70,6 +104,11 @@ body
   text-align: center
 
   &:hover
+    color: $orange
+    text-decoration: underline
+    transition: 0.1s
+
+  &:active
     color: $light-orange
     text-decoration: underline
     transition: 0.1s
@@ -85,7 +124,7 @@ body
   height: 18px
   margin: 0px 0px 0px 10px
 
-.language__active
+.language_active
   font-family: 'Century Gothic'
   font-weight: 700
   font-size: 15px
@@ -94,6 +133,11 @@ body
   color: $black
 
   &:hover
+    color: $orange
+    text-decoration: underline
+    transition: 0.1s
+
+  &:active
     color: $light-orange
     text-decoration: underline
     transition: 0.1s
@@ -117,11 +161,63 @@ body
   line-height: 18px
   color: $black
   width: 119px
+  cursor: pointer
 
   &:hover
+    color: $orange
+    text-decoration: underline
+    transition: 0.1s
+
+  &:active
     color: $light-orange
     text-decoration: underline
     transition: 0.1s
+
+//                                                БУРГЕР
+.header__burger
+  display: none
+
+@media (max-width:767px)
+  .header__body
+    height: 50px
+  .header__burger
+    display: block
+    position: relative
+    width: 30px
+    height: 20px
+    margin: auto 50px auto auto
+    z-index: 5px
+  // .header__burger::before
+  .header__burger::before
+    top: 0
+    content: ''
+    background-color: #F65C2C
+    position: absolute
+    width: 100%
+    height: 2px
+    left: 0
+  .header__burger::after
+    bottom: 0
+    content: ''
+    background-color: #F65C2C
+    position: absolute
+    width: 100%
+    height: 2px
+    left: 0
+  .header__burger span
+    background-color: #F65C2C
+    position: absolute
+    width: 100%
+    height: 2px
+    left: 0
+    top: 9px
+  .header__nav
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    display: none
 
 /*              Все карты
 
@@ -132,18 +228,18 @@ body
 
 /*            Средние карты
 
-.cards__medium-cards
+.medium-cards
   width: 1216px
   height: 421px
   justify-content: space-between
-  margin: 29px auto auto auto
+  margin: 134px auto auto auto
   display: flex
 
-.medium__card
+.medium-cards__card
   width: 392px
   height: 421px
 
-.medium__title
+.medium-cards__title
   height: 50px
   font-family: 'Century Gothic'
   font-weight: 700
@@ -152,7 +248,7 @@ body
   color: $black
   margin: 15px auto auto 0px
 
-.medium__text
+.medium-cards__text
   height: 72px
   font-family: 'Century Gothic'
   font-weight: 400
@@ -161,7 +257,7 @@ body
   color: $grey
   margin: 15px auto auto 0px
 
-.medium__data
+.medium-cards__data
   height: 18px
   font-family: 'Century Gothic'
   font-weight: 400
@@ -175,7 +271,7 @@ body
 .description
   display: flex
   align-items: center
-  margin: 10px 0px 0px 0px
+  margin: 10px 0px 3px 0px
 
 .description__spectators
   margin: 0px 9px 0px 4px
@@ -195,18 +291,18 @@ body
 
 /*                       Большие карты
 
-.cards__large-cards
+.large-cards
   width: 1216px
   height: 507px
   justify-content: space-between
   margin: 60px auto auto auto
   display: flex
 
-.large__card
+.large-cards__card
   width: 598px
   height: 507px
 
-.large__title
+.large-cards__title
   height: 50px
   font-family: 'Century Gothic'
   font-weight: 700
@@ -215,7 +311,7 @@ body
   color: $black
   margin: 15px auto auto 0px
 
-.large__text
+.large-cards__text
   height: 72px
   font-family: 'Century Gothic'
   font-weight: 400
@@ -224,7 +320,7 @@ body
   color: $grey
   margin: 15px auto auto 0px
 
-.info
+.large-cards__info
   display: flex
   margin: 11px 0px 0px 0px
 
@@ -233,23 +329,23 @@ body
   font-family: 'Century Gothic'
   font-weight: 400
   font-size: 15px
-  margin: auto 26px auto 0px
+  margin: auto 26px 0px 0px
   color: $grey
 
 /*                            Маленькие карточки
 
-.cards__small-cards
+.small-cards
   width: 1216px
   height: 421px
   display: flex
   margin: 60px 0px 0px 0px
   justify-content: space-between
 
-.small__card
+.small-cards__card
   width: 289px
   height: 421px
 
-.small__title
+.small-cards__title
   height: 50px
   font-family: 'Century Gothic'
   font-style: normal
@@ -259,7 +355,7 @@ body
   color: $black
   margin: 15px auto auto 0px
 
-.small__text
+.small-cards__text
   height: 72px
   font-family: 'Century Gothic'
   font-weight: 400
@@ -268,7 +364,7 @@ body
   color: $grey
   margin: 15px auto auto 0px
 
-.small__data
+.small-cards__data
   font-family: 'Century Gothic'
   font-weight: 400
   font-size: 15px
@@ -299,6 +395,11 @@ body
     color: $grey
 
   &:hover
+    color: $orange
+    text-decoration: underline
+    transition: 0.1s
+
+  &:active
     color: $light-orange
     text-decoration: underline
     transition: 0.1s
@@ -323,7 +424,7 @@ body
   height: 20px
   border-radius: 9999px
   margin: 0px 10px 0px 0px
-  background: #F65C2C
+  background: $orange
 
 /*                                Футер
 
@@ -335,8 +436,6 @@ body
   margin: 180px auto auto
 
 .footer__nav
-  width: 1193px
-  height: 301px
   display: flex
   justify-content: space-between
   padding: 166px 352px 0px
