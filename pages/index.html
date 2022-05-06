@@ -1,14 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/assets/css/bootstrap-grid.min.css">
-    <h1></h1>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
 </head>
+
 <body>
-    
+
+
+
+
+    <!-- шапка -->
+
+    <div class="header">
+        <div class="header__inner">
+            <div class="header__nav">
+                <div class="header__nav-logo"><a href="/pages/index.html"><img src="/assets/images/logo.png" alt=""></a></div>
+                <ul class="menu">
+                    <li>
+                        <a href="" class="menu__item"> Блог</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__item">Курсы</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__item">Контакты</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu__item">О нас</a>
+                    </li>
+                </ul>
+                <div class="menu__burger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="language">Ру <img src="/assets/images/option.png" alt=""></div>
+                <div class="contact"><img src="/assets/images/phone-icon.png" alt=""> +99890 999 9797</div>
+            </div>
+            <div class="header__main">
+                <h1>Школа-профессий</br> будущего</h1>
+                <div class="main">
+                    <div class="main__block">
+                    <button class="main__btn">Записаться на курс</button>
+                    <a href=""><img class="main__img" src="/assets/images/play-icon-s.png" alt=""></a>
+                </div>
+                        <img class="academic-cap" src="/assets/images/academic-cap.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- первый раздел -->
+
+    <div class="container first-section">
+            <div class="row gy-4 justify-content-md-center">
+                <h2>Наши направления</h2>
+                <div class="col-xxl-2 col-sm-6">
+                    <div><a href="/" class="first-section__btn first-section__bttn">Все</a></div>
+                </div>
+                <div class="col-xxl-3 col-md-4 col-sm-6">
+                    <div><a href="/" class="first-section__btn first-section__bttn">Дизайн</a></div>
+                </div>
+                <div class="col-xxl-4 col-md-6 col-sm-10">
+                    <div><a href="/" class="first-section__btn first-section__bttn">Программирование</a></div>
+                </div>
+                <div class="col-xxl-3 col-md-4 col-sm-6"><a href="/"
+                        class="first-section__btn first-section__bttn">Маркетинг</a></div>
+            </div>
+    </div>
+
+
+
+
+
+    <!-- второй раздел -->
+
+    <div class="container second-section">
+        <div class="row second-section__block-first">
+            <h2>Уровень сложности</h2>
+            <div class="tittle">
+                <div class="radio"></div>Любой
+            </div>
+            <div class="tittle">
+                <div class="radio"></div>Для новичков
+            </div>
+            <div class="tittle">
+                <div class="radio"></div>Для специалистов
+            </div>
+        </div>
+        <div class="row second-section__block-second">
+            <h2>Тип курса</h2>
+            <div class="tittle">
+                <div class="radio"></div>Любой
+            </div>
+            <div class="tittle">
+                <div class="radio"></div>Профессия
+            </div>
+            <div class="tittle">
+                <div class="radio"></div>Курс
+            </div>
+        </div>
+        <div class="row second-section__block-third">
+            <h2>Длительность</h2>
+            <div class="tittle"><input type="range" min="1" max="12">
+                <p>от 1 до 12 месяцев</p>
+            </div>
+            <button href="#" class="second-section__btn">
+                <p>Применить фильтр</p>
+            </button>
+        </div>
+    </div>
+
+
+
+
+
+<!-- третий раздел -->
+
+    <div class="container third-section">
+        <h3>Результаты поиска</h3>
+        <div class="row gy-4 justify-content-md-center third-section__container-row">
+            <div class="col-xl-6 col-sm-12 third-section__card">
+                <div class="third-section__elem-first">
+                    <p>Професии</p>
+                </div>
+                <div class="third-section__elem-first">
+                    <div class="elem-a">
+                        <h4>Графический дизайнер</h4>
+                    </div>
+                    <div class="elem-b"><img src="/assets/images/a-i-icon.png" alt=""></div>
+                    <div class="elem-c"><button>Отправить заявку</button></div>
+                </div>
+                <div class="third-section__elem-second">
+                    <p>русский</p>
+                    <p>|</p>
+                    <p>5 лет</p>
+                    <p>|</p>
+                    <p>9-11 лет</p>
+                    <p>|</p>
+                    <p>1 раз в неделю по з часа</p>
+                </div>
+            </div>
+            <div class="col-xl-6 col-sm-12 third-section__card">
+                <div class="third-section__elem-first">
+                    <p>Професии</p>
+                </div>
+                <div class="third-section__elem-first">
+                    <div class="elem-a">
+                        <h4>UX/UI</br>
+                            дизайнер</h4>
+                    </div>
+                    <div class="elem-b"><img src="/assets/images/feather-icon.png" alt=""></div>
+                    <div class="elem-c"><button>Отправить заявку</button></div>
+                </div>
+                <div class="third-section__elem-second">
+                    <p>русский</p>
+                </div>
+            </div>
+            <div class="col-xl-6 col-sm-12 third-section__card">
+                <div class="third-section__elem-first">
+                    <p>Професии</p>
+                </div>
+                <div class="third-section__elem-first">
+                    <div class="elem-a">
+                        <h4>Веб-</br>
+                            дизайнер</h4>
+                    </div>
+                    <div class="elem-b"><img src="/assets/images/share-icon.png" alt=""></div>
+                    <div class="elem-c"><button>Отправить заявку</button></div>
+                </div>
+                <div class="third-section__elem-second">
+                    <p>русский</p>
+                </div>
+            </div>
+            <div class="col-xl-6 col-sm-12 third-section__card">
+                <div class="third-section__elem-first">
+                    <p>Професии</p>
+                </div>
+                <div class="third-section__elem-first">
+                    <div class="elem-a">
+                        <h4>Motion-</br>
+                            дизайнер</h4>
+                    </div>
+                    <div class="elem-b"><img src="/assets/images/clapperboard-icon.png" alt=""></div>
+                    <div class="elem-c"><button>Отправить заявку</button></div>
+                </div>
+                <div class="third-section__elem-second">
+                    <p>русский</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+        <!-- четвертый раздел -->
+
+    <div class="container">
+        <div class="fourth-section">
+            <div class="fourth-section__tittle">
+                <p style="font-family: Century Gothic Bold">Наши</p>
+                <p style="font-family: Century Gothic" class="p-first">препода-ватели</p>
+                <p style="font-family: Century Gothic Bold" class="p-second">АЛЕКСАНДРА</p>
+                <p style="font-family: Century Gothic" class="p-third">Графический дизайнер</p>
+            </div>
+            <div class="fourth-section__teacher"><img src="/assets/images/teacher.png" alt=""></div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- пятый раздел -->
+
+    <div class="container">
+        <div class="fifth-section">
+            <p style="font-family: Century Gothic Bold">Системный подход</p>
+            <p style="font-family: Century Gothic" class="p-first">к образованию</p>
+            <div class="fifth-section__system-aproach">
+                <div class="elements">
+                    <a href="#"><div class="round"><img src="/assets/images/play-icon-b.png" alt=""></a>
+                        <p>Видеолекции</p>
+                    </div>
+                </div>
+                <div class="elements">
+                    <a href="#"><div class="round"><img src="/assets/images/buildingpeople-icon.png" alt=""></a>
+                        <p class="practice">Практика</p>
+                    </div>
+                </div>
+                <div class="elements">
+                    <a href="#"><div class="round"><img src="/assets/images/dialog-icon.png" alt=""></a>
+                        <p>Консультации</p>
+                    </div>
+                </div>
+                <div class="elements">
+                    <a href="#"><div class="round"><img src="/assets/images/certification-icon.png" alt=""></a>
+                        <p>Сертификат</p>
+                    </div>
+                </div>
+                <div class="elements">
+                    <a href="#"><div class="round"><img src="/assets/images/job-icon.png" alt=""></a>
+                        <p class="job">Трудоустройство</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- шестой раздел -->
+
+    <div class="container">
+        <div class="row gy-4 sixth-section">
+            <h5>Мы на YouTube</h5>
+            <div class="sixth-section__first-element col-xl-12"><img src="/assets/images/image-1.png" alt=""></div>
+            <div class="bottom-elements">
+                <div class="sixth-section__second-element col-xl-6"><img src="/assets/images/image-2.png" alt=""></div>
+                <div class="sixth-section__third-element col-xl-6"><img src="/assets/images/image-3.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- седьмой раздел -->
+
+    <div class="container" style="width: 1232px; margin: 0 auto; margin-top: 20px;">
+        <div class="row seventh-section">
+
+            <div class="sventh-section__block" style="display:flex">
+                <div class="first-element">
+                    <h4 style="font-family: Century Gothic Bold">Учебный</h4>
+                    <h5 style="font-family: Century Gothic">процесс</h5>
+                    <p>очное, проходит на территории школы. Занятия проводятся на русском языке.</br></br><b
+                            style="font-family: Century Gothic Bold">Все кабинеты полностью оборудованы:</b> студентам
+                        мы предоставляем ноутбуки на время обучения, в кабинетах есть <b
+                            style="font-family: Century Gothic Bold">проекторы с высоким разрешением, а также
+                            кондиционер.</b></p>
+                </div>
+                <div class="second-element"><img src="/assets/images/image-4.png" alt=""></div>
+            </div>
+
+            <div class="sventh-section__block" style="display:flex">
+                <div class="first-element col-xl-6"><img src="/assets/images/image-5.png" alt=""></div>
+                <div class="second-element col-xl-6">
+                    <h4 style="font-family: Century Gothic Bold">Студенты</h4>
+                    <p>очное, проходит на территории школы. Занятия проводятся на русском языке.</br></br><b
+                            style="font-family: Century Gothic Bold">Все кабинеты полностью оборудованы:</b> студентам
+                        мы предоставляем ноутбуки на время обучения, в кабинетах есть <b
+                            style="font-family: Century Gothic Bold">проекторы с высоким разрешением, а также
+                            кондиционер.</b></p>
+                </div>
+            </div>
+
+            <div class="sventh-section__block" style="display:flex">
+                <div class="first-element col-xl-6">
+                    <h4 style="font-family: Century Gothic Bold">Видео</h4>
+                    <p>очное, проходит на территории школы. Занятия проводятся на русском языке.</br></br><b
+                            style="font-family: Century Gothic Bold">Все кабинеты полностью оборудованы:</b> студентам
+                        мы предоставляем ноутбуки на время обучения, в кабинетах есть <b
+                            style="font-family: Century Gothic Bold">проекторы с высоким разрешением, а также
+                            кондиционер.</b></p>
+                </div>
+                <div class="second-element col-xl-6"><img src="/assets/images/image-6.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- восьмой раздел -->
+
+        <div class="eighth-section">
+            <h5>Подать заявку</h5>
+            <div class="eighth-section__block">
+                <form action="/">
+                    <input class="f-name frame" type="text" placeholder="Имя">
+                    <input class="s-name frame" type="text" placeholder="Фамилия">
+                    <input class="email frame" type="email" placeholder="E-mail адрес">
+                    <input class="phone frame" type="email" placeholder="Ваш номер телефона"></br>
+                    <img src="/assets/images/convert.png" alt="">
+                    <input class="submit" type="submit" placeholder="Отправить">
+                </form>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+    <!-- футер -->
+
+    <div class="footer">
+            <div class="footer__block-first">
+                <div class="element"><h6>КУРСЫ</h6><a href="#"><p>Дизайн</p></a><a href="#"><p>Програмирование</p></a><a href="#"><p>Маркетинг</p></a></div>
+                <div class="element"><h6>ДИЗАЙН</h6><a href="#"><p>Графический Дизайн</p></a><a href="#"><p>UX/UI Дизайн</p></a><a href="#"><p>Моушен дизайн</p></a></div>
+                <div class="element"><h6>МАРКЕТИНГ</h6><a href="#"><p>Цифровой Маркетинг</p></a><a href="#"><p>SMM Pro</p></a><a href="#"><p>Youtube</p></a><a href="#"><p>Targeting</p></a></div>
+            </div>
+            <div class="footer__block-second">
+                <div class="logo"><a href="#"><img src="/assets/images/logo.png" alt=""></a></div>
+                <div class="social"><a href="#"><img src="/assets/images/social-media.png" alt=""></a></div>
+            </div>
+        </div>
+
 </body>
+
 </html>

@@ -1,0 +1,11 @@
+.container {
+  width: 1216px;
+}
+
+@media (max-width: 480.01px) {
+  .container {
+    width: 965px;
+  }
+}
+
+/*# sourceMappingURL=grid.css.map */
