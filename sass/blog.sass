@@ -1,0 +1,377 @@
+@charset "UTF-8"
+
+@font-face
+  font-family: century-gothic-bold
+  src: url("/assets/fonts/Century Gothic/centurygothic_bold.ttf")
+
+@font-face
+  font-family: century-gothic
+  src: url("/assets/fonts/Century Gothic/centurygothic.ttf")
+
+$orange:#FF6B00
+$black:#444444
+$light-orange:#FF8730
+$grey:#868686
+$white:#FFFFFF
+
+body
+  height: 100%
+  width: 100%
+  line-height: 1
+  margin: 0
+  padding: 0
+  color: $black
+
+/*                     Шапка
+
+.header
+  display: flex
+  min-height: 129px
+  align-items: center
+  max-width: 1216px
+  margin: 0px auto
+
+.logo__image
+  height: 45.31585693359375px
+  width: 170.00003051757812px
+
+.menu
+  width: 572px
+  height: 19px
+  display: flex
+  margin: 0px 0px 0px 152px
+  justify-content: space-between
+
+  /* Все статьи
+
+.menu__link-active
+  font-weight: 700
+  color: $orange
+  line-height: 18px
+  font-family: 'Century Gothic'
+  text-decoration: none
+  border-radius: nullpx
+  font-size: 15px
+
+  &:hover
+    color: $light-orange
+    text-decoration: underline
+    transition: 0.1s
+
+.menu__link
+  text-decoration: none
+  font-weight: 700
+  color: $black
+  font-family: 'Century Gothic'
+  font-size: 15px
+  font-weight: 700
+  line-height: 18px
+  letter-spacing: 0em
+  text-align: center
+
+  &:hover
+    color: $light-orange
+    text-decoration: underline
+    transition: 0.1s
+
+.language
+  display: flex
+  width: 46px
+  height: 18px
+  margin: 10px 50px 19px 80px
+
+.language__language-selection
+  width: 18px
+  height: 18px
+  margin: 0px 0px 0px 10px
+
+.language__active
+  font-family: 'Century Gothic'
+  font-weight: 700
+  font-size: 15px
+  text-decoration: none
+  line-height: 18px
+  color: $black
+
+  &:hover
+    color: $light-orange
+    text-decoration: underline
+    transition: 0.1s
+
+.contact
+  display: flex
+  width: 150px
+  height: 21px
+  margin: 9px 0px 19px 0px
+  font-family: century-gothic-bold
+
+.contact__phone-icon
+  width: 21px
+  height: 21px
+  margin: 0px 10px 0px 0px
+
+.contact__number
+  font-family: 'Century Gothic'
+  font-weight: 700
+  font-size: 15px
+  line-height: 18px
+  color: $black
+  width: 119px
+
+  &:hover
+    color: $light-orange
+    text-decoration: underline
+    transition: 0.1s
+
+/*              Все карты
+
+.cards
+  width: 1216px
+  height: 1500px
+  margin: 0px auto
+
+/*            Средние карты
+
+.cards__medium-cards
+  width: 1216px
+  height: 421px
+  justify-content: space-between
+  margin: 29px auto auto auto
+  display: flex
+
+.medium__card
+  width: 392px
+  height: 421px
+
+.medium__title
+  height: 50px
+  font-family: 'Century Gothic'
+  font-weight: 700
+  font-size: 20px
+  line-height: 25px
+  color: $black
+  margin: 15px auto auto 0px
+
+.medium__text
+  height: 72px
+  font-family: 'Century Gothic'
+  font-weight: 400
+  font-size: 15px
+  line-height: 18px
+  color: $grey
+  margin: 15px auto auto 0px
+
+.medium__data
+  height: 18px
+  font-family: 'Century Gothic'
+  font-weight: 400
+  font-size: 15px
+  line-height: 18px
+  color: $grey
+  margin: 15px auto auto 0px
+
+/*                       Информация о карточках
+
+.description
+  display: flex
+  align-items: center
+  margin: 10px 0px 0px 0px
+
+.description__spectators
+  margin: 0px 9px 0px 4px
+  font-family: 'Century Gothic'
+  font-weight: 400
+  font-size: 10px
+  line-height: 12px
+  color: $grey
+
+.description__comments
+  margin: 0px 0px 0px 4px
+  font-family: 'Century Gothic'
+  font-weight: 400
+  font-size: 10px
+  line-height: 12px
+  color: $grey
+
+/*                       Большие карты
+
+.cards__large-cards
+  width: 1216px
+  height: 507px
+  justify-content: space-between
+  margin: 60px auto auto auto
+  display: flex
+
+.large__card
+  width: 598px
+  height: 507px
+
+.large__title
+  height: 50px
+  font-family: 'Century Gothic'
+  font-weight: 700
+  font-size: 20px
+  line-height: 25px
+  color: $black
+  margin: 15px auto auto 0px
+
+.large__text
+  height: 72px
+  font-family: 'Century Gothic'
+  font-weight: 400
+  font-size: 15px
+  line-height: 18px
+  color: $grey
+  margin: 15px auto auto 0px
+
+.info
+  display: flex
+  margin: 11px 0px 0px 0px
+
+.info__data
+  height: 18px
+  font-family: 'Century Gothic'
+  font-weight: 400
+  font-size: 15px
+  margin: auto 26px auto 0px
+  color: $grey
+
+/*                            Маленькие карточки
+
+.cards__small-cards
+  width: 1216px
+  height: 421px
+  display: flex
+  margin: 60px 0px 0px 0px
+  justify-content: space-between
+
+.small__card
+  width: 289px
+  height: 421px
+
+.small__title
+  height: 50px
+  font-family: 'Century Gothic'
+  font-style: normal
+  font-weight: 700
+  font-size: 20px
+  line-height: 25px
+  color: $black
+  margin: 15px auto auto 0px
+
+.small__text
+  height: 72px
+  font-family: 'Century Gothic'
+  font-weight: 400
+  font-size: 15px
+  line-height: 18px
+  color: $grey
+  margin: 15px auto auto 0px
+
+.small__data
+  font-family: 'Century Gothic'
+  font-weight: 400
+  font-size: 15px
+  line-height: 18px
+  color: $grey
+  margin: 15px 0px 0px 0px
+
+/*                              Страницы
+
+.pages
+  display: flex
+  margin: 60px auto auto auto
+  width: 145.87px
+  height: 20px
+  align-items: center
+
+.pages__item
+  &:not(:first-child)
+    width: 9px
+    height: 18px
+    font-family: 'Century Gothic'
+    font-style: normal
+    font-weight: 400
+    font-size: 15px
+    line-height: 18px
+    margin: 0px 0px 0px 15px
+    text-decoration: none
+    color: $grey
+
+  &:hover
+    color: $light-orange
+    text-decoration: underline
+    transition: 0.1s
+
+  &:last-child
+    margin: 0px 0px 2px 20px
+
+.pages__item-first
+  width: 9px
+  height: 18px
+  font-family: 'Century Gothic'
+  font-weight: 400
+  font-size: 15px
+  line-height: 18px
+  text-decoration: none
+  margin-right: 8px
+  color: $white
+
+.pages__active-page
+  text-align: center
+  width: 20px
+  height: 20px
+  border-radius: 9999px
+  margin: 0px 10px 0px 0px
+  background: #F65C2C
+
+/*                                Футер
+
+.footer
+  background-image: url('../images/footer.svg')
+  width: 1920px
+  height: 742px
+  align-items: center
+  margin: 180px auto auto
+
+.footer__nav
+  width: 1193px
+  height: 301px
+  display: flex
+  justify-content: space-between
+  padding: 166px 352px 0px
+
+.footer-item
+  font-family: 'Century Gothic'
+  font-weight: 400
+  font-size: 30px
+  line-height: 37px
+  margin: 0px 0px 18px 0px
+  color: $white
+
+.footer-tittle
+  font-family: 'Century Gothic'
+  font-weight: 700
+  font-size: 40px
+  line-height: 49px
+  margin: 0px 0px 50px 0px
+  color: $white
+
+.footer__bottom
+  display: flex
+  margin: 166px auto 50px 352px
+  width: 1088px
+  height: 59px
+  justify-content: space-between
+  align-items: center
+
+.bottom__social-network
+  width: 160px
+  height: 40px
+  display: flex
+  justify-content: space-between
+
+.bottom__logo
+  height: 58.995208740234375px
+  width: 218px
+  color: $white
