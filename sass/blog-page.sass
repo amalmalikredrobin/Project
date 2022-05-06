@@ -1,0 +1,195 @@
+* 
+	max-width: 1600px 
+	max-height: 820px 
+
+.back 
+	border: 0ch 
+	background-color: white 
+	margin-left: 352px 
+	margin-top: 100.8px 
+	&:checked 
+		color: aliceblue 
+
+.page 
+	margin-top: 69.85px 
+	align-items: center 
+
+.header__center-first 
+	font-family: "Century Gothic" 
+	font-style: normal 
+	font-weight: 700 
+	font-size: 50px 
+	line-height: 61px 
+	color: #444444 
+	margin-left: 352px 
+
+.header__center-h3 
+	font-family: "Century Gothic" 
+	font-style: normal 
+	font-weight: 400 
+	font-size: 30px 
+	line-height: 37px 
+	margin-left: 352px 
+	color: #868686 
+
+.data__page-left 
+	font-family: "Century Gothic" 
+	font-style: normal 
+	font-weight: 400 
+	font-size: 20px 
+	line-height: 25px 
+	color: #868686 
+
+.data__page-minutes 
+	font-family: "Century Gothic" 
+	font-style: normal 
+	font-weight: 400 
+	font-size: 20px 
+	line-height: 25px 
+	color: #868686 
+	margin-left: 20px 
+
+.eyes 
+	margin-left: 20px 
+
+.data__block-views 
+	display: flex 
+	margin-left: 352px 
+
+.girl__img 
+	margin-top: 57px 
+	margin-left: 352px
+
+.h3__bold 
+	font-family: "Century Gothic" 
+	font-style: normal 
+	font-weight: 700 
+	font-size: 25px 
+	line-height: 31px 
+	margin-top: 58px 
+	margin-left: 352px 
+	color: #444444 
+
+.h3__normal 
+	font-family: "Century Gothic" 
+	font-style: normal 
+	font-weight: 400 
+	font-size: 25px 
+	line-height: 31px 
+	margin-left: 352px 
+	margin-top: 22px 
+	color: #868686 
+
+.avtor__left-footer 
+	font-family: "Century Gothic" 
+	font-style: normal 
+	font-weight: 700 
+	font-size: 20px 
+	line-height: 25px 
+	color: #444444 
+
+.star__page-right 
+	font-family: "Century Gothic" 
+	font-style: normal 
+	font-weight: 700 
+	font-size: 20px 
+	line-height: 25px 
+	color: #444444 
+	margin-left: 654px 
+
+.footer 
+	display: flex 
+	margin-left: 455px 
+	margin-top: 122px 
+
+.footer__logo 
+	margin-left: 455px 
+	margin-top: 3px 
+
+.star__btn 
+	border: 0ch 
+	background-color: white 
+	margin-left: 648px 
+
+.comments__footer 
+	font-family: "Century Gothic" 
+	font-style: normal 
+	font-weight: 700 
+	font-size: 20px 
+	line-height: 25px 
+	color: #444444 
+	margin-left: 352px 
+	margin-top: 103px 
+
+.img__writer 
+	border-radius: 9999px 
+	margin-left: 347px 
+	margin-top: 26px 
+
+.footer__img__writer 
+	display: flex 
+
+.comment__footer 
+	margin-left: 18px 
+	max-width: 590px 
+	margin-top: 40px 
+
+.writer__name 
+	font-family: "Century Gothic" 
+	font-style: normal 
+	font-weight: 700 
+	font-size: 17px 
+	line-height: 21px 
+	color: #000000 
+
+.comments__normal 
+	font-style: normal 
+	font-weight: 400 
+	font-size: 17px 
+	line-height: 20px 
+	color: #636363 
+
+.socials 
+	border: 0px 
+	background-color: white 
+	margin-left: 864px 
+	margin-top: 62px 
+
+.footer_star-logo 
+	width: 1600px 
+
+.rate 
+	padding: 0 10px 
+	border: 0ch 
+	background-color: white 
+	margin-top: -50px 
+	margin-right: 170px 
+	&:not(:checked) 
+		& > input 
+			position: absolute 
+			top: -9999px 
+		& > label 
+			float: right 
+			width: 1em 
+			overflow: hidden 
+			white-space: nowrap 
+			cursor: pointer 
+			font-size: 30px 
+			color: #ccc 
+			&:before 
+				content: "★ " 
+	& > input 
+		&:checked 
+			& ~ label 
+				color: slategray 
+
+.rate:not(:checked) > label:hover,
+
+.rate:not(:checked) > label:hover ~ label 
+	color: orange 
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label 
+	color: orange 
