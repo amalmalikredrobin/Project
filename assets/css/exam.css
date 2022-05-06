@@ -55,10 +55,10 @@ body {
   padding: 0 15px;
 }
 
-.about-course {
+.course {
   padding-top: 100px;
 }
-.about-course__contnent {
+.course__info {
   display: flex;
   justify-content: space-between;
 }
@@ -67,53 +67,53 @@ body {
   display: flex;
 }
 
-.about-course-detailes__subtitles {
+.course-price__pricelist {
   flex-wrap: wrap;
 }
-.level {
+.mainbody {
   width: 100%;
 }
-.level__title {
+.mainbody__title {
   font-size: 5rem;
   max-width: 60%;
 }
-.level__card {
+.mainbody__card {
   max-width: 100%;
 }
 
-.level-card {
+.mainbody-card {
   text-align: center;
   max-width: 400px;
   margin: 0 auto;
   max-width: 100%;
 }
-.level-card__img {
+.mainbody-card__img {
   display: flex;
   align-items: flex-start;
   justify-content: center;
 }
-.level-card__title {
+.mainbody-card__title {
   font-size: 1.25rem;
   margin-bottom: 18px;
   max-width: 100%;
 }
-.level-card__subtitle {
+.mainbody-card__subtitle {
   font-size: 0.9375rem;
   max-width: 100%;
 }
 
-.level__content {
+.mainbody__content {
   position: relative;
   max-width: 100%;
   display: flex;
   margin: 0 auto;
 }
 
-.level-card {
+.mainbody-card {
   max-width: 100%;
 }
 
-.level__content .slick-arrow {
+.mainbody__content .slick-arrow {
   position: absolute;
   top: 50%;
   z-index: 10;
@@ -123,20 +123,20 @@ body {
 }
 
 @media (max-width: 768px) {
-  .level__content .slick-arrow.slick-prev {
+  .mainbody__content .slick-arrow.slick-prev {
     left: 0;
   }
 
-  .level__content .slick-arrow.slick-next {
+  .mainbody__content .slick-arrow.slick-next {
     right: 0;
   }
 }
-.level__content .slick-arrow.slick-prev {
+.mainbody__content .slick-arrow.slick-prev {
   left: 0;
   background: url(/assets/images/arrow.svg) 0 0 no-repeat;
 }
 
-.level__content .slick-arrow.slick-next {
+.mainbody__content .slick-arrow.slick-next {
   right: 0;
   background: url(/assets/images/arrow.svg) 0 0 no-repeat;
   transform: rotate(180deg);
@@ -158,18 +158,18 @@ body {
   max-width: 100%;
 }
 
-.learn__title {
+.edu__title {
   font-size: 5rem;
   max-width: 40%;
   font-family: "Century Gothic-Bold";
 }
-.learn__content ol {
+.edu__content ol {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0;
 }
-.learn li {
+.edu li {
   list-style-type: decimal-leading-zero;
   flex-direction: column;
   flex-wrap: wrap;
@@ -177,7 +177,7 @@ body {
   max-width: 26%;
   margin-bottom: 40px;
 }
-.learn ol li::before {
+.edu ol li::before {
   content: counter(list);
   list-style-type: decimal-leading-zero;
   font-size: 3.125rem;
@@ -186,47 +186,47 @@ body {
   color: #000000;
 }
 
-.learn-card__title {
+.edu-card__title {
   font-size: 1.25rem;
   margin-bottom: 20px;
 }
-.learn-card__subtitle {
+.edu-card__subtitle {
   font-size: 0.938rem;
 }
 
 @media (max-width: 1000px) {
-  .learn__title {
+  .edu__title {
     font-size: 3.125rem;
     max-width: 100%;
     display: flex;
     justify-content: center;
   }
-  .learn li {
+  .edu li {
     max-width: 45%;
   }
-  .learn ol li::before {
+  .edu ol li::before {
     font-size: 3.875rem;
   }
 
-  .learn-card__title {
+  .edu-card__title {
     font-size: 1.5rem;
   }
-  .learn-card__subtitle {
+  .edu-card__subtitle {
     font-size: 1.125rem;
   }
 
-  .level-card__title {
+  .edu-card__title {
     font-size: 1rem;
   }
-  .level-card__subtitle {
+  .edu-card__subtitle {
     font-size: 0.875rem;
   }
 }
 @media (max-width: 768px) {
-  .learn li {
+  .edu li {
     max-width: 45%;
   }
-  .learn ol li::before {
+  .edu ol li::before {
     list-style: decimal-leading-zero;
     content: counter(decimal-leading-zero);
     font-size: 3.875rem;
@@ -235,36 +235,36 @@ body {
     margin-bottom: 20px;
   }
 
-  .learn-card__title {
+  .edu-card__title {
     font-size: 1.25rem;
   }
-  .learn-card__subtitle {
+  .edu-card__subtitle {
     font-size: 0.938rem;
   }
 }
 @media (max-width: 480px) {
-  .learn__title {
+  .edu__title {
     font-size: 1.875rem;
     max-width: 100%;
     display: flex;
     justify-content: center;
   }
-  .learn__title {
+  .edu__title {
     max-width: 100%;
     display: flex;
     justify-content: center;
   }
-  .learn li {
+  .edu li {
     max-width: 100%;
   }
-  .learn ol li::before {
+  .edu ol li::before {
     font-size: 3.875rem;
   }
 
-  .learn-card__title {
+  .edu-card__title {
     font-size: 1.125rem;
   }
-  .learn-card__subtitle {
+  .edu-card__subtitle {
     font-size: 0.938rem;
   }
 }
