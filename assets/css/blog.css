@@ -49,6 +49,11 @@ body {
   font-size: 15px;
 }
 .menu__link-active:hover {
+  color: #FF6B00;
+  text-decoration: underline;
+  transition: 0.1s;
+}
+.menu__link-active:active {
   color: #FF8730;
   text-decoration: underline;
   transition: 0.1s;
@@ -66,6 +71,11 @@ body {
   text-align: center;
 }
 .menu__link:hover {
+  color: #FF6B00;
+  text-decoration: underline;
+  transition: 0.1s;
+}
+.menu__link:active {
   color: #FF8730;
   text-decoration: underline;
   transition: 0.1s;
@@ -93,6 +103,11 @@ body {
   color: #444444;
 }
 .language__active:hover {
+  color: #FF6B00;
+  text-decoration: underline;
+  transition: 0.1s;
+}
+.language__active:active {
   color: #FF8730;
   text-decoration: underline;
   transition: 0.1s;
@@ -119,8 +134,14 @@ body {
   line-height: 18px;
   color: #444444;
   width: 119px;
+  cursor: pointer;
 }
 .contact__number:hover {
+  color: #FF6B00;
+  text-decoration: underline;
+  transition: 0.1s;
+}
+.contact__number:active {
   color: #FF8730;
   text-decoration: underline;
   transition: 0.1s;
@@ -316,6 +337,11 @@ body {
   color: #868686;
 }
 .pages__item:hover {
+  color: #FF6B00;
+  text-decoration: underline;
+  transition: 0.1s;
+}
+.pages__item:active {
   color: #FF8730;
   text-decoration: underline;
   transition: 0.1s;

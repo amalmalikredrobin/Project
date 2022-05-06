@@ -164,7 +164,7 @@ body {
 }
 .first-section__bttn {
   font-family: Century Gothic Bold;
-  border: 0.125em solid #f65c2c;
+  border: 0.125em solid rgb(246, 92, 44);
   height: 3.75em;
   display: flex;
   align-items: center;
@@ -178,7 +178,7 @@ body {
   color: #ffffff;
 }
 .first-section__bttn:hover {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 .first-section__bttn:hover:after {
   top: auto;
@@ -217,12 +217,12 @@ body {
   width: 19px;
   height: 19px;
   border-radius: 50%;
-  border: 2px solid #f65c2c;
+  border: 2px solid rgb(246, 92, 44);
   cursor: pointer;
   transition: 0.5s;
 }
 .second-section__block-first .tittle .radio:hover {
-  border: 6px solid #f65c2c;
+  border: 6px solid rgb(246, 92, 44);
 }
 .second-section__block-first h2 {
   width: 22.4375em;
@@ -254,12 +254,12 @@ body {
   width: 19px;
   height: 19px;
   border-radius: 50%;
-  border: 2px solid #f65c2c;
+  border: 2px solid rgb(246, 92, 44);
   cursor: pointer;
   transition: 0.5s;
 }
 .second-section__block-second .tittle .radio:hover {
-  border: 6px solid #f65c2c;
+  border: 6px solid rgb(246, 92, 44);
 }
 .second-section__block-second h2 {
   width: 9.375em;
@@ -281,7 +281,7 @@ body {
   margin-left: 100px;
   width: 144px;
   height: 35px;
-  border: 2px solid #f65c2c;
+  border: 2px solid rgb(246, 92, 44);
   border-radius: 50px;
   background-color: #fff;
   text-decoration: none;
@@ -469,7 +469,7 @@ body {
 .third-section__elem-first .elem-c button {
   width: 144px;
   height: 35px;
-  border: 2px solid #f65c2c;
+  border: 2px solid rgb(246, 92, 44);
   background-color: #ffffff;
   border-radius: 50px;
   font-family: "Century Gothic";
@@ -557,7 +557,7 @@ body {
 .fifth-section__system-aproach .round {
   width: 219px;
   height: 219px;
-  border: 1px solid #f65c2c;
+  border: 1px solid rgb(246, 92, 44);
   border-radius: 50%;
 }
 .fifth-section__system-aproach .round .practice {
